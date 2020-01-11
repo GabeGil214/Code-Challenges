@@ -88,4 +88,64 @@ function sayHowdy(){
 everyXsecsForYsecs(sayHowdy, 1, 5);
 
 console.log('End of Challenge 3');
+// */// (do not alter this line
+
+
+/////////////////
+//             //
+// CHALLENGE 4 //
+//             //
+/////////////////
+
+// /* <<<=== Remove the first two slashes (//) to comment out this challenge when finished
+console.log('Start of Challenge 4');
+// ...your code below
+
+function forEach(arr, cb){
+  for(let i=0;i<arr.length;i++){
+    cb(arr[i], i);
+  }
+}
+
+const delays = [2000, 5000, 0, 3500];
+
+function delayLog(delayTime, i){
+  setTimeout(function(){
+    console.log('printing element ' + i);
+  }, delayTime)
+}
+
+forEach(delays, delayLog);
+
+console.log('End of Challenge 4');
+// */// (do not alter this line)
+
+
+
+/////////////////
+//             //
+// CHALLENGE 5 //
+//             //
+/////////////////
+
+// /* <<<=== Remove the first two slashes (//) to comment out this challenge when finished
+console.log('Start of Challenge 5');
+// ...your code below
+
+function changeColor(){
+  if($('body').css('backgroundColor') === "rgb(221, 238, 255)"){
+    $('body').css('backgroundColor', 'rgb(255, 238, 221)');
+  } else {
+    $('body').css('backgroundColor', 'rgb(221, 238, 255)');
+  }
+}
+
+$('#activate').click(function(){
+  console.log('clicked #1');
+  $('#color').click(changeColor);
+})
+
+// ...your code above
+document.body.style.background = '#def';
+console.log('End of Challenge 5');
 // */// (do not alter this line)
